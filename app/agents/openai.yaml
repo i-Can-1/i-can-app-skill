@@ -1,0 +1,4 @@
+interface:
+  display_name: "App"
+  short_description: "Turn ideas into runnable websites or software"
+  default_prompt: "Use app to turn my idea into a runnable website, software product, or tool with implementation, tests, browser verification, screenshots, and README."
