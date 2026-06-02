@@ -54,6 +54,3 @@ app/
     openai.yaml
 ```
 
-## Privacy Note
-
-This shared package is intentionally generic. It should not contain local machine paths, personal project names, credentials, private URLs, or user-specific instructions.
