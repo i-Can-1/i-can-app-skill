@@ -20,6 +20,7 @@ It guides Codex through:
 - Simple prototypes: local state or localStorage when appropriate
 - Real web animation: CSS/Tailwind transitions, Framer Motion, or GSAP
 - Motion previews and product demos: HyperFrames
+- Optional visual-quality enhancement: Taste Skill paths such as `design-taste-frontend`, `gpt-taste`, `image-to-code`, and `redesign-existing-projects`
 
 ## Installation
 
@@ -54,3 +55,6 @@ app/
     openai.yaml
 ```
 
+## Privacy Note
+
+This shared package is intentionally generic. It should not contain local machine paths, personal project names, credentials, private URLs, or user-specific instructions.
