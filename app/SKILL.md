@@ -39,6 +39,10 @@ Use these skills when available and relevant:
 - `finishing-a-development-branch` when committing, merging, or preparing a branch for handoff.
 - `browser:control-in-app-browser` for local UI verification, interaction checks, and screenshots.
 - `figma:figma-generate-design` or `figma:figma-use` only when the user asks for Figma/design artifacts or provides a Figma URL.
+- `design-taste-frontend` for premium landing pages, portfolios, marketing sites, and visual redesigns that need stronger layout, typography, spacing, and non-templated art direction.
+- `gpt-taste` for stricter Codex/GPT-oriented visual work where the user explicitly wants bold, motion-rich, Awwwards-level marketing or portfolio design.
+- `image-to-code` for image-first website workflows where visual references should be generated/analyzed before implementation.
+- `redesign-existing-projects` when improving the visual quality of an existing website or app without rewriting the product.
 - `hyperframes:gsap` only when the project needs complex GSAP-style timelines, scroll-driven effects, or video-like web motion references.
 - `hyperframes:hyperframes` for HTML-based motion previews, product demo videos, launch videos, animated explainers, title cards, overlays, captions, narration, and scene transitions.
 - `hyperframes:hyperframes-cli` for scaffolding, linting, inspecting, previewing, and rendering HyperFrames projects.
@@ -141,7 +145,38 @@ Prefer real HTML/CSS/React mockups over AI-generated UI images because they are 
 
 After the user chooses, implement the selected direction and record it in the README or project notes.
 
-### 5. HyperFrames Motion And Video Gate
+### 5. Taste Skill Visual Quality Gate
+
+Use Taste Skill as a visual quality enhancer, not as the product manager. `app` remains responsible for product scope, architecture, implementation, testing, and delivery.
+
+Apply Taste Skill guidance when the project is:
+
+- landing page
+- portfolio
+- marketing website
+- product launch page
+- brand or editorial site
+- creative web experience
+- visual redesign of an existing UI
+- image-to-code website implementation
+
+Choose the right Taste Skill path:
+
+- **General premium frontend**: use `design-taste-frontend`.
+- **Bold Codex/GPT-oriented art direction**: use `gpt-taste` only when the user asks for highly expressive, motion-rich, non-templated work.
+- **Image-first website workflow**: use `image-to-code` when visual references should drive implementation.
+- **Existing project visual upgrade**: use `redesign-existing-projects` before changing UI in an existing codebase.
+
+Do not apply Taste Skill blindly to dense admin tools, CRM/ERP systems, data tables, multi-step workflows, or utility-heavy dashboards. For those, prioritize ergonomics, clarity, speed, accessibility, and the product's existing design system.
+
+When Taste Skill is used:
+
+- produce a one-line design read before visual implementation
+- avoid generic AI defaults such as purple-blue gradients, centered template heroes, repeated three-card rows, and weak typography
+- improve layout variance, spacing, typography, visual hierarchy, and motion only where it serves the product
+- keep accessibility, responsive behavior, and actual functionality above decorative novelty
+
+### 6. HyperFrames Motion And Video Gate
 
 Use this gate when the user wants animated visual options, a motion preview, product demo video, launch/promo video, social ad, narrated walkthrough, or a video generated from an existing website.
 
@@ -163,7 +198,7 @@ For HyperFrames work:
 
 Do not confuse HyperFrames video artifacts with the real app UI. The shipped app must still implement its own interactive animations when the user wants animated software.
 
-### 6. Design The Experience And Motion
+### 7. Design The Experience And Motion
 
 For UI projects:
 
@@ -188,7 +223,7 @@ For animated UI:
 
 The final UI must be based on the selected visual direction from the Visual Design Selection Gate when that gate was used.
 
-### 7. Implement
+### 8. Implement
 
 Build complete workflows, not isolated mockups.
 
@@ -211,7 +246,7 @@ For full-stack apps:
 - add minimal schema/migration setup when needed
 - handle common API errors
 
-### 8. Test And Debug
+### 9. Test And Debug
 
 Run the relevant checks:
 
@@ -226,7 +261,7 @@ Run the relevant checks:
 
 If a check fails, use systematic debugging. Fix root causes rather than weakening tests or removing features.
 
-### 9. Document
+### 10. Document
 
 Create or update a concise README or usage note with:
 
@@ -264,6 +299,7 @@ Do not claim completion until:
 - relevant tests or smoke checks have run
 - browser verification and screenshot/visual inspection are done for UI apps
 - selected visual direction and final UI screenshots are available for visual projects
+- Taste Skill visual-quality guidance has been applied or explicitly skipped for marketing, portfolio, landing, or redesign work
 - animation behavior has been browser-checked when motion is part of the project
 - HyperFrames preview URL is available when a motion/video artifact was created
 - README or usage instructions are present
@@ -275,6 +311,7 @@ Final response must include:
 - commands run
 - verification results
 - selected design option and screenshot paths for UI projects
+- Taste Skill path used, if any
 - selected animation direction and verification notes for animated UI projects
 - HyperFrames preview URL and render path, if video artifacts were created
 - local URL if a dev server is running
